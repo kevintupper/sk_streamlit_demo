@@ -1,0 +1,3 @@
+streamlit
+semantic-kernel
+python-dotenv

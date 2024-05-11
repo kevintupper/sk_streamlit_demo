@@ -1,0 +1,35 @@
+/* This file contains custom CSS that is applied to the entire app */
+
+/* HTML SETTINGS */
+html {
+    font-size: 1.25rem !important;
+}
+
+/* MAIN CONTENT SETTINGS */
+
+/* Buttons in the main area */
+.main .row-widget.stButton button {
+    background-color: teal;
+    color: white;
+} 
+    
+.main .row-widget.stButton button:focus,
+.main .row-widget.stButton button:hover,
+.main .row-widget.stButton button:focus:not(:active) {
+    border-color: teal;
+}
+
+/* Hide slider tickbar. */
+.main [data-testid="stTickBar"] {  
+    display: none;
+}  
+
+/* Tab headers */
+button[data-baseweb="tab"] p {  
+    font-size: 1.0rem;
+}  
+
+/* React JSON Viewer */
+.react-json-view {
+    font-size: 16px !important;
+}

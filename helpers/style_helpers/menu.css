@@ -1,0 +1,77 @@
+/* This file contains custom CSS that is applied to the sidebar menu */
+
+
+/* Set the background color, image, and other properties for the sidebar */
+[data-testid="stSidebar"] {
+    background-color: #212529 !important;
+    background-image: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31);
+    background-repeat: no-repeat;
+    padding-top: 0;
+    color: lightgray;
+    background-position: 20px 40px;
+    background-size: 180px;
+}
+
+/* Add a "Microsoft" label to the sidebar */
+[data-testid="stSidebarNav"]::before {
+    content: "Microsoft";
+    margin-left: 20px;
+    margin-top: 20px;
+    position: relative;
+    top: 100px;
+}
+
+/* Force all child elements of the sidebar to inherit the text color */
+[data-testid="stSidebar"] * {
+    color: inherit;
+}
+
+/* Class for the main navigation div */
+.logo-divider {
+    margin-top: -0.5rem;
+    border-top: 1px solid gray;
+}
+
+/* Style the radio buttons as links */
+[data-testid="stSidebar"] [data-baseweb="radio"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+
+/* Hide the radio button portion  */
+[data-testid="stSidebar"] [data-baseweb="radio"] div:nth-child(1) {
+    display: contents;
+}
+
+/* Style the label portion */
+[data-testid="stSidebar"] [data-baseweb="stMarkdownContainer"] div:nth-child(3) {
+    cursor: pointer;
+}
+
+/* Change the background color of the selected radio button's label */
+[data-testid="stSidebar"] [data-baseweb="radio"] input[type="radio"]:checked ~ div:nth-child(3) {
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 0.25rem;
+}
+
+/* Buttons in the sidebar */
+[data-testid="stSidebar"] .row-widget.stButton button {  
+    background-color: transparent;
+    border-width: 0px;
+}  
+
+/* Buttons in the sidebar - focus */
+[data-testid="stSidebar"] .row-widget.stButton button:focus {  
+    color: white;
+    border-width: 0px;
+}  
+
+/* Adjust the divider next to the main menu navigation */
+.tight-divider {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    border-top: 1px solid gray;
+}
+
